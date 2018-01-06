@@ -27,33 +27,30 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                int randomNumberOne = (int)(Math.random()*10);
-                int randomNumberTwo = (int)(Math.random()*10);
+                int randomNumberOne = (int)((Math.random()*6)+1);
+                int randomNumberTwo = (int)((Math.random()*6)+1);
                 int randomQuoteNumber = (int)(Math.random()*10);
 
                 String[] quotes = new String[11];
 
-                quotes[0] = "Is it rolling or stretching";
-                quotes[1] = "I'm a dumb";
-                quotes[2] = "I'll run it over in my jeep";
-                quotes[3] = "Come fly with me";
-                quotes[4] = "I'm the smartest man in the world";
-                quotes[5] = "Stop yanking on my chain";
-                quotes[6] = "No";
-                quotes[7] = "Yah sure";
-                quotes[8] = "Hug me";
-                quotes[9] = "You know my feelings about the japanese";
-                quotes[10] = "Torque squad";
+                quotes[0] = "I shall never believe that God plays dice with the world - Albert Einstein";
+                quotes[1] = "If the risk is high, the reward is high... Why not roll the dice - Tyron Woodley";
+                quotes[2] = "One who doesn't throw the dice can never expect to score a six - Navjot Singh Sidhu";
+                quotes[3] = "Life is like a dice, so watch the ones you're rolling with - LeCrae";
+                quotes[4] = "Time to toss the dice - Robert Jordan";
+                quotes[5] = "God's dice always have a lucky roll - Sophocles";
+                quotes[6] = "Appeal. In law, to put the dice into the box for another throw - Ambrose Bierce";
+                quotes[7] = "The die has been cast - Julius Caesar";
+                quotes[8] = "It is lost at dice, what ancient honor won - William Shakespeare";
+                quotes[9] = "Imposing democracy through force is a roll of the dice - Chuck Hagel";
+                quotes[10] = "Football is like chess, only without the dice - Lukas Podolski";
 
                 outputDiceOne.setText(Integer.toString(randomNumberOne));
                 outputDiceTwo.setText(Integer.toString(randomNumberTwo));
 
-                if(randomNumberOne == 0 && randomNumberTwo == 0){
-                    outputQuote.setText(quotes[10]);
-                }
-                else{
-                    outputQuote.setText(quotes[randomQuoteNumber]);
-                }
+
+                outputQuote.setText(quotes[randomQuoteNumber]);
+
 
             }
         });
