@@ -1,3 +1,3 @@
 # DDDice
 
-Android app to simulate a 10 sided dice roll (numbers 0 - 9) for playing dungeons and dragons. The quotes are easter eggs and inside jokes meant for my friends using it.
+Android app to simulate two, six sided dice roll (numbers 1-6). Random numbers are generated for simulating the dice roll. Every dice roll, a random quote is picked from a list of 10 possible ones. The quotes are famous quotes about dice or rolling dice.
